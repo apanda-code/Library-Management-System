@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "x86_64-w64-mingw32-gcc",
+            "args": [
+                "-o",
+                "${workspaceFolder}/build/${fileBasenameNoExtension}.exe",
+                "${file}",
+                "`pkg-config --cflags --libs gtk+-3.0`"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        }
+    ]
+}

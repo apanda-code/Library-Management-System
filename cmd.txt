@@ -1,0 +1,9 @@
+cd /c/Users/Kksah/Downloads/c
+
+
+
+ gcc main.c -o main.exe `pkg-config --cflags --libs gtk+-3.0`
+
+
+./main.exe
+
